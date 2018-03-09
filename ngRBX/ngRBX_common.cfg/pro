@@ -1,0 +1,17 @@
+ngRBX{
+
+  ngCCMServerURL="ws://cmshcal4:64011/ngccm_jrpc"
+  CommandLog="command.log"
+
+  rbxType=1 #rt_QIE11
+   		  
+  # Number of seconds to wait for successful conclusion of RBX configuration
+  # before declaring it failed
+  # NOTE: the value entered here can be used as an override value to _increase_
+  #       the timeout value used from that calculated internally to the application
+  #       as necessary for the number of RBXes listed above, but it cannot _decrease_
+  #       the value used below what was calculated.
+  dimTimeoutSeconds = 480
+  FailOnErrors = false
+
+}

@@ -1,0 +1,32 @@
+DTC {
+  BCOffset=3563 
+  daqLink=false
+  CalibEnable=true
+  CalibUpper=3494
+  CalibLower=3485
+  #Calib min 3456, max 3519
+
+  ExpectedT1Firmware="0x605b"
+  ExpectedT2Firmware="0x2e"  
+ 
+  #nSFPOutputs=2
+  SFPEnable=false
+
+  if (CRATE==41) {  
+    #SlotEnableList="1,2"
+    SlotEnableList="1" # HE FE is read out by AMC3
+    fedIDSFP0=1776
+  }
+
+  #preScaleFactNumOfZeros=13  # corresponds to a pre-scale of 8192
+
+  TriggerListInterchangeName="DTC_self"
+
+  localTtcSignal=true
+  internalPeriodicTriggerEnable=true
+}
+
+TriggerAdapter {
+   Mode="DTC"
+   ExternalListName="DTC_self"
+}

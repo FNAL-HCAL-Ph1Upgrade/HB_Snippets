@@ -1,0 +1,30 @@
+DTC {
+
+  fedIDleft=1776
+  fedIDright=1776
+  BCOffset=3563 
+  daqLink=false
+  CalibEnable=true
+  CalibUpper=3494
+  CalibLower=3485
+  #Calib min 3456, max 3519
+
+  ExpectedT1Firmware="0x605c"
+  ExpectedT2Firmware="0x2e"  
+ 
+  #nSFPOutputs=2
+  SFPEnable=false
+
+  #preScaleFactNumOfZeros=13  # corresponds to a pre-scale of 8192
+
+  TriggerListInterchangeName="DTC_self"
+
+  localTtcSignal=true
+  internalPeriodicTriggerEnable=true
+  internalPeriodicTriggerMode=0
+}
+
+TriggerAdapter {
+   Mode="DTC"
+   ExternalListName="DTC_self"
+}

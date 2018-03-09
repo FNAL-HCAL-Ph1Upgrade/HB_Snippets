@@ -1,0 +1,3 @@
+Global {
+  UHAL_CONNECTIONS_FILE="file:///home/daqowner/FNALfakeCfgCVS/Crate/connections.xml/pro"
+}

@@ -1,0 +1,23 @@
+ngRBX{
+
+  # this is the setup that we need for the preproduction ngHB boards. they need the clock to be explicitly enabled
+  #SpecialCommandsInitFirst="put HB1-4-QIE[1-48]_CkOutEn 48*1 ;put HB1-4-dac1-daccontrol_RefSelect 0 ;put HB1-4-dac1-daccontrol_ChannelMonitorEnable 1 ;put HB1-4-dac1-daccontrol_InternalRefEnable 1 ;put HB1-4-dac2-daccontrol_RefSelect 0 ;put HB1-4-dac2-daccontrol_ChannelMonitorEnable 1 ;put HB1-4-dac2-daccontrol_InternalRefEnable 1 ;put HB1-4-biasvoltage[1-48]_f 48*66.5 ;put HB1-4-QIE[1-48]_PedestalDAC 48*38 ;put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 332 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 332 ; put ${RBX}-pulser-ledB-width_f 30.0 ;"
+
+
+  SpecialCommandsInitFirst="put HB1-${QIESLOT}-QIE[1-64]_PedestalDAC 256*38 ;put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 332 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 332 ; put ${RBX}-pulser-ledB-width_f 30.0 ;"
+
+  PedestalOverride="xmlfolder://home/daqowner/magicxmls/default/he"
+  DelayOverride="xmlfolder://home/daqowner/magicxmls/default/he"
+  TDCThresholdOverride="xmlfolder://home/daqowner/magicxmls/default/he"
+
+
+  rbxName[ 0]="HB1"
+  active=false
+  if (RBX=="HB1")  {
+    ## and these two lines above and below
+    if (SITE in (1,2,3,4)) {
+        active=true
+    }
+  }
+  calibCard=false
+}

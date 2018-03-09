@@ -1,0 +1,9 @@
+<mastersnippet>
+  <CommonMasterSnippet file="Master/common.xml"/>
+  <FMSettings NumberOfEvents="100"  />
+  <CfgScript>
+    include(/ngRBX/ngRBX_HB_led.cfg:pro)
+    include(/uHTR/uHTR_HB4800.cfg:pro)
+    include(/AMC13/DTC_slot1.cfg:pro)
+  </CfgScript>
+</mastersnippet>

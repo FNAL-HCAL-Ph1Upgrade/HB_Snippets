@@ -1,0 +1,41 @@
+ngRBX{
+  # Copied to FNAL from 904 on October 26, 2016
+  ngCCMServerURL="ws://localhost:64011/ngccm_jrpc"
+  CommandLog="command.log"
+
+
+  # this is the setup that we need for the preproduction ngHB boards. they need the clock to be explicitly enabled
+  #SpecialCommandsInitFirst="put HB1-4-QIE[1-48]_CkOutEn 48*1 ;put HB1-4-dac1-daccontrol_RefSelect 0 ;put HB1-4-dac1-daccontrol_ChannelMonitorEnable 1 ;put HB1-4-dac1-daccontrol_InternalRefEnable 1 ;put HB1-4-dac2-daccontrol_RefSelect 0 ;put HB1-4-dac2-daccontrol_ChannelMonitorEnable 1 ;put HB1-4-dac2-daccontrol_InternalRefEnable 1 ;put HB1-4-biasvoltage[1-48]_f 48*66.5 ;put HB1-4-QIE[1-48]_PedestalDAC 48*38 ;put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 332 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 332 ; put ${RBX}-pulser-ledB-width_f 30.0 ;"
+
+
+  SpecialCommandsInitFirst="put HB1-calib-QIE[1-16]_PedestalDAC 16*38 ;put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 332 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 332 ; put ${RBX}-pulser-ledB-width_f 30.0 ;"
+
+  PedestalOverride="xmlfolder://home/daqowner/magicxmls/default/he"
+  DelayOverride="xmlfolder://home/daqowner/magicxmls/default/he"
+  TDCThresholdOverride="xmlfolder://home/daqowner/magicxmls/default/he"
+  DelayTag="null"
+  PedestalTag="null"
+  TDCThresholdTag="null"
+
+
+  rbxName[ 0]="HB1"
+  active=false
+  if (RBX=="HB1")  {
+    ## and these two lines above and below
+    if (SITE in (1,2,3,4)) {
+        active=true
+    }
+  }
+  calibCard=false
+  rbxType=1 #rt_QIE11
+
+  # Number of seconds to wait for successful conclusion of RBX configuration
+  # before declaring it failed
+  # NOTE: the value entered here can be used as an override value to _increase_
+  #       the timeout value used from that calculated internally to the application
+  #       as necessary for the number of RBXes listed above, but it cannot _decrease_
+  #       the value used below what was calculated.
+   		  
+  dimTimeoutSeconds = 480
+  FailOnErrors = false
+}

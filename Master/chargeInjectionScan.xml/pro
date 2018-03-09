@@ -1,0 +1,31 @@
+<mastersnippet>
+  <FMSettings NumberOfEvents="40" RunInfoPublish="false" OfficialRunNumbers="false" />
+
+  <CfgScript>
+    include(/ngRBX/ngRBX.cfg:pro)
+    include(/Crate/crate.cfg:pro)
+    include(/uHTR/uHTR.cfg:pro)
+    include(/AMC13/DTC.cfg:pro)
+    HcalWriter {
+      StoragePath="/tmp"
+      FilenameFormat = "FNAL_%06d.root"
+    }
+    ngRBXSequencer {
+
+      RBXName[ 0] = "HE1"
+      RBXCount = 1
+      DefaultEventsPerPoint = 5
+      DelayTime = 0
+      AutoStop = true
+      CommandLog = "/tmp/sequencerLogHE.txt"
+      Script = "/home/daqowner/FNALfakeCfgCVS/ngRBX/sequences/ChargeInjectDAC_scan.txt/pro"
+    }
+    TriggerAdapter {
+      TTCciTriggerStride=5
+      TriggerCode=5
+      LPMMode=false
+      UseSuspendForCyclingTTCci=true
+    }
+  </CfgScript>
+
+</mastersnippet>

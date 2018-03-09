@@ -1,0 +1,245 @@
+<RunSequenceName>HCAL USC55</RunSequenceName>
+<!-- THIS CONFIGURATION WAS AUTOMATICALLY CREATED VIA HcalCfg/Master/sourcing/gen.py -->
+<RunConfigs>
+<RunConfig name='+-------HEM01-------+'  snippet='' />
+<RunConfig name='HEM01_pedestal' snippet='Master/sourcing/common_sourcing_he.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_6|Executive_7|hcalSrcCoordinator_1' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+  <CfgToAppend>
+    ngRBX{ rbxName[0] = "HEM01" }
+    uHTR { if (CRATE==30) { if (SLOT in (5,6)) { PRESENT = true } } }
+  </CfgToAppend>
+</RunConfig>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEM02-------+'  snippet='' />
+<RunConfig name='HEM02_pedestal' snippet='Master/sourcing/common_sourcing_he.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_18|Executive_19|hcalSrcCoordinator_3' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+  <CfgToAppend>
+    ngRBX{ rbxName[0] = "HEM02" }
+    uHTR { if (CRATE==24) { if (SLOT in (2,3)) { PRESENT = true } } }
+  </CfgToAppend>
+</RunConfig>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEM03-------+'  snippet='' />
+<RunConfig name='HEM03_pedestal' snippet='Master/sourcing/common_sourcing_he.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_18|Executive_19|hcalSrcCoordinator_3' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+  <CfgToAppend>
+    ngRBX{ rbxName[0] = "HEM03" }
+    uHTR { if (CRATE==24) { if (SLOT in (5,6)) { PRESENT = true } } }
+  </CfgToAppend>
+</RunConfig>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEM04-------+'  snippet='' />
+<RunConfig name='HEM04_pedestal' snippet='Master/sourcing/common_sourcing_he.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_19|Executive_20|hcalSrcCoordinator_3' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+  <CfgToAppend>
+    ngRBX{ rbxName[0] = "HEM04" }
+    uHTR { if (CRATE==20) { if (SLOT in (2,3)) { PRESENT = true } } }
+  </CfgToAppend>
+</RunConfig>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEM05-------+'  snippet='' />
+<RunConfig name='HEM05_pedestal' snippet='Master/sourcing/common_sourcing_he.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_19|Executive_20|hcalSrcCoordinator_3' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+  <CfgToAppend>
+    ngRBX{ rbxName[0] = "HEM05" }
+    uHTR { if (CRATE==20) { if (SLOT in (5,6)) { PRESENT = true } } }
+  </CfgToAppend>
+</RunConfig>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEM06-------+'  snippet='' />
+<RunConfig name='HEM06_pedestal' snippet='Master/sourcing/common_sourcing_he.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_18|Executive_20|hcalSrcCoordinator_3' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+  <CfgToAppend>
+    ngRBX{ rbxName[0] = "HEM06" }
+    uHTR { if (CRATE==21) { if (SLOT in (2,3)) { PRESENT = true } } }
+  </CfgToAppend>
+</RunConfig>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEM07-------+'  snippet='' />
+<RunConfig name='HEM07_pedestal' snippet='Master/sourcing/common_sourcing_he.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_18|Executive_20|hcalSrcCoordinator_3' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+  <CfgToAppend>
+    ngRBX{ rbxName[0] = "HEM07" }
+    uHTR { if (CRATE==21) { if (SLOT in (5,6)) { PRESENT = true } } }
+  </CfgToAppend>
+</RunConfig>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEM08-------+'  snippet='' />
+<RunConfig name='HEM08_pedestal' snippet='Master/sourcing/common_sourcing_he.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_13|Executive_14|hcalSrcCoordinator_2' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+  <CfgToAppend>
+    ngRBX{ rbxName[0] = "HEM08" }
+    uHTR { if (CRATE==25) { if (SLOT in (2,3)) { PRESENT = true } } }
+  </CfgToAppend>
+</RunConfig>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEM09-------+'  snippet='' />
+<RunConfig name='HEM09_pedestal' snippet='Master/sourcing/common_sourcing_he.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_13|Executive_14|hcalSrcCoordinator_2' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+  <CfgToAppend>
+    ngRBX{ rbxName[0] = "HEM09" }
+    uHTR { if (CRATE==25) { if (SLOT in (5,6)) { PRESENT = true } } }
+  </CfgToAppend>
+</RunConfig>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEM10-------+'  snippet='' />
+<RunConfig name='HEM10_pedestal' snippet='Master/sourcing/common_sourcing_he.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_12|Executive_14|hcalSrcCoordinator_2' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+  <CfgToAppend>
+    ngRBX{ rbxName[0] = "HEM10" }
+    uHTR { if (CRATE==31) { if (SLOT in (2,3)) { PRESENT = true } } }
+  </CfgToAppend>
+</RunConfig>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEM11-------+'  snippet='' />
+<RunConfig name='HEM11_pedestal' snippet='Master/sourcing/common_sourcing_he.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_12|Executive_14|hcalSrcCoordinator_2' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+  <CfgToAppend>
+    ngRBX{ rbxName[0] = "HEM11" }
+    uHTR { if (CRATE==31) { if (SLOT in (5,6)) { PRESENT = true } } }
+  </CfgToAppend>
+</RunConfig>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEM12-------+'  snippet='' />
+<RunConfig name='HEM12_pedestal' snippet='Master/sourcing/common_sourcing_he.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_12|Executive_13|hcalSrcCoordinator_2' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+  <CfgToAppend>
+    ngRBX{ rbxName[0] = "HEM12" }
+    uHTR { if (CRATE==35) { if (SLOT in (2,3)) { PRESENT = true } } }
+  </CfgToAppend>
+</RunConfig>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEM13-------+'  snippet='' />
+<RunConfig name='HEM13_pedestal' snippet='Master/sourcing/common_sourcing_he.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_12|Executive_13|hcalSrcCoordinator_2' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+  <CfgToAppend>
+    ngRBX{ rbxName[0] = "HEM13" }
+    uHTR { if (CRATE==35) { if (SLOT in (5,6)) { PRESENT = true } } }
+  </CfgToAppend>
+</RunConfig>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEM14-------+'  snippet='' />
+<RunConfig name='HEM14_pedestal' snippet='Master/sourcing/common_sourcing_he.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_5|Executive_6|hcalSrcCoordinator_1' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+  <CfgToAppend>
+    ngRBX{ rbxName[0] = "HEM14" }
+    uHTR { if (CRATE==37) { if (SLOT in (2,3)) { PRESENT = true } } }
+  </CfgToAppend>
+</RunConfig>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEM15-------+'  snippet='' />
+<RunConfig name='HEM15_pedestal' snippet='Master/sourcing/common_sourcing_he.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_5|Executive_6|hcalSrcCoordinator_1' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+  <CfgToAppend>
+    ngRBX{ rbxName[0] = "HEM15" }
+    uHTR { if (CRATE==37) { if (SLOT in (5,6)) { PRESENT = true } } }
+  </CfgToAppend>
+</RunConfig>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEM16-------+'  snippet='' />
+<RunConfig name='HEM16_pedestal' snippet='Master/sourcing/common_sourcing_he.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_5|Executive_7|hcalSrcCoordinator_1' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+  <CfgToAppend>
+    ngRBX{ rbxName[0] = "HEM16" }
+    uHTR { if (CRATE==34) { if (SLOT in (2,3)) { PRESENT = true } } }
+  </CfgToAppend>
+</RunConfig>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEM17-------+'  snippet='' />
+<RunConfig name='HEM17_pedestal' snippet='Master/sourcing/common_sourcing_he.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_5|Executive_7|hcalSrcCoordinator_1' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+  <CfgToAppend>
+    ngRBX{ rbxName[0] = "HEM17" }
+    uHTR { if (CRATE==34) { if (SLOT in (5,6)) { PRESENT = true } } }
+  </CfgToAppend>
+</RunConfig>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEM18-------+'  snippet='' />
+<RunConfig name='HEM18_pedestal' snippet='Master/sourcing/common_sourcing_he.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_6|Executive_7|hcalSrcCoordinator_1' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+  <CfgToAppend>
+    ngRBX{ rbxName[0] = "HEM18" }
+    uHTR { if (CRATE==30) { if (SLOT in (2,3)) { PRESENT = true } } }
+  </CfgToAppend>
+</RunConfig>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEP01-------+'  snippet='' />
+<RunConfig name='HEP01_SD_HEP_02_03' snippet='Master/sourcing/HEP01_SD_HEP_02_03.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_6|Executive_7' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP01_SD_HEP_14_15' snippet='Master/sourcing/HEP01_SD_HEP_14_15.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_6|Executive_7' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP01_pedestal' snippet='Master/sourcing/HEP01.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_6|Executive_7|hcalSrcCoordinator_1' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEP02-------+'  snippet='' />
+<RunConfig name='HEP02_SD_HEP_02_03' snippet='Master/sourcing/HEP02_SD_HEP_02_03.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_18|Executive_19' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP02_SD_HEP_14_15' snippet='Master/sourcing/HEP02_SD_HEP_14_15.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_18|Executive_19' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP02_SD_HEP_08_09' snippet='Master/sourcing/HEP02_SD_HEP_08_09.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_18|Executive_19' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP02_pedestal' snippet='Master/sourcing/HEP02.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_18|Executive_19|hcalSrcCoordinator_3' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEP03-------+'  snippet='' />
+<RunConfig name='HEP03_SD_HEP_02_03' snippet='Master/sourcing/HEP03_SD_HEP_02_03.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_18|Executive_19' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP03_SD_HEP_14_15' snippet='Master/sourcing/HEP03_SD_HEP_14_15.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_18|Executive_19' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP03_SD_HEP_08_09' snippet='Master/sourcing/HEP03_SD_HEP_08_09.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_18|Executive_19' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP03_pedestal' snippet='Master/sourcing/HEP03.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_18|Executive_19|hcalSrcCoordinator_3' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEP04-------+'  snippet='' />
+<RunConfig name='HEP04_SD_HEP_02_03' snippet='Master/sourcing/HEP04_SD_HEP_02_03.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_19|Executive_20' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP04_SD_HEP_08_09' snippet='Master/sourcing/HEP04_SD_HEP_08_09.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_19|Executive_20' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP04_pedestal' snippet='Master/sourcing/HEP04.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_19|Executive_20|hcalSrcCoordinator_3' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEP05-------+'  snippet='' />
+<RunConfig name='HEP05_SD_HEP_02_03' snippet='Master/sourcing/HEP05_SD_HEP_02_03.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_19|Executive_20' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP05_SD_HEP_08_09' snippet='Master/sourcing/HEP05_SD_HEP_08_09.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_19|Executive_20' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP05_pedestal' snippet='Master/sourcing/HEP05.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_19|Executive_20|hcalSrcCoordinator_3' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEP06-------+'  snippet='' />
+<RunConfig name='HEP06_SD_HEP_02_03' snippet='Master/sourcing/HEP06_SD_HEP_02_03.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_18|Executive_20' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP06_SD_HEP_08_09' snippet='Master/sourcing/HEP06_SD_HEP_08_09.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_18|Executive_20' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP06_pedestal' snippet='Master/sourcing/HEP06.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_18|Executive_20|hcalSrcCoordinator_3' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEP07-------+'  snippet='' />
+<RunConfig name='HEP07_SD_HEP_02_03' snippet='Master/sourcing/HEP07_SD_HEP_02_03.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_18|Executive_20' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP07_SD_HEP_08_09' snippet='Master/sourcing/HEP07_SD_HEP_08_09.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_18|Executive_20' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP07_pedestal' snippet='Master/sourcing/HEP07.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_12|Executive_13|Executive_14|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_2|hcalSrcCoordinator_1|Executive_18|Executive_20|hcalSrcCoordinator_3' maskedFM='HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEP08-------+'  snippet='' />
+<RunConfig name='HEP08_SD_HEP_02_03' snippet='Master/sourcing/HEP08_SD_HEP_02_03.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_13|Executive_14' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP08_SD_HEP_14_15' snippet='Master/sourcing/HEP08_SD_HEP_14_15.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_13|Executive_14' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP08_SD_HEP_08_09' snippet='Master/sourcing/HEP08_SD_HEP_08_09.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_13|Executive_14' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP08_pedestal' snippet='Master/sourcing/HEP08.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_13|Executive_14|hcalSrcCoordinator_2' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEP09-------+'  snippet='' />
+<RunConfig name='HEP09_SD_HEP_02_03' snippet='Master/sourcing/HEP09_SD_HEP_02_03.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_13|Executive_14' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP09_SD_HEP_14_15' snippet='Master/sourcing/HEP09_SD_HEP_14_15.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_13|Executive_14' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP09_SD_HEP_08_09' snippet='Master/sourcing/HEP09_SD_HEP_08_09.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_13|Executive_14' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP09_pedestal' snippet='Master/sourcing/HEP09.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_13|Executive_14|hcalSrcCoordinator_2' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEP10-------+'  snippet='' />
+<RunConfig name='HEP10_SD_HEP_14_15' snippet='Master/sourcing/HEP10_SD_HEP_14_15.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_12|Executive_14' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP10_SD_HEP_08_09' snippet='Master/sourcing/HEP10_SD_HEP_08_09.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_12|Executive_14' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP10_pedestal' snippet='Master/sourcing/HEP10.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_12|Executive_14|hcalSrcCoordinator_2' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEP11-------+'  snippet='' />
+<RunConfig name='HEP11_SD_HEP_14_15' snippet='Master/sourcing/HEP11_SD_HEP_14_15.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_12|Executive_14' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP11_SD_HEP_08_09' snippet='Master/sourcing/HEP11_SD_HEP_08_09.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_12|Executive_14' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP11_pedestal' snippet='Master/sourcing/HEP11.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_12|Executive_14|hcalSrcCoordinator_2' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEP12-------+'  snippet='' />
+<RunConfig name='HEP12_SD_HEP_14_15' snippet='Master/sourcing/HEP12_SD_HEP_14_15.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_12|Executive_13' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP12_SD_HEP_08_09' snippet='Master/sourcing/HEP12_SD_HEP_08_09.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_12|Executive_13' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP12_pedestal' snippet='Master/sourcing/HEP12.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_12|Executive_13|hcalSrcCoordinator_2' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEP13-------+'  snippet='' />
+<RunConfig name='HEP13_SD_HEP_14_15' snippet='Master/sourcing/HEP13_SD_HEP_14_15.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_12|Executive_13' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP13_SD_HEP_08_09' snippet='Master/sourcing/HEP13_SD_HEP_08_09.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_12|Executive_13' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP13_pedestal' snippet='Master/sourcing/HEP13.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_5|Executive_6|Executive_7|hcalSrcCoordinator_3|hcalSrcCoordinator_1|Executive_12|Executive_13|hcalSrcCoordinator_2' maskedFM='HCAL_HBHEa;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEP14-------+'  snippet='' />
+<RunConfig name='HEP14_SD_HEP_02_03' snippet='Master/sourcing/HEP14_SD_HEP_02_03.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_5|Executive_6' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP14_SD_HEP_14_15' snippet='Master/sourcing/HEP14_SD_HEP_14_15.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_5|Executive_6' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP14_SD_HEP_08_09' snippet='Master/sourcing/HEP14_SD_HEP_08_09.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_5|Executive_6' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP14_pedestal' snippet='Master/sourcing/HEP14.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_5|Executive_6|hcalSrcCoordinator_1' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEP15-------+'  snippet='' />
+<RunConfig name='HEP15_SD_HEP_02_03' snippet='Master/sourcing/HEP15_SD_HEP_02_03.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_5|Executive_6' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP15_SD_HEP_14_15' snippet='Master/sourcing/HEP15_SD_HEP_14_15.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_5|Executive_6' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP15_SD_HEP_08_09' snippet='Master/sourcing/HEP15_SD_HEP_08_09.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_5|Executive_6' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP15_pedestal' snippet='Master/sourcing/HEP15.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_5|Executive_6|hcalSrcCoordinator_1' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEP16-------+'  snippet='' />
+<RunConfig name='HEP16_SD_HEP_02_03' snippet='Master/sourcing/HEP16_SD_HEP_02_03.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_5|Executive_7' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP16_SD_HEP_14_15' snippet='Master/sourcing/HEP16_SD_HEP_14_15.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_5|Executive_7' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP16_pedestal' snippet='Master/sourcing/HEP16.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_5|Executive_7|hcalSrcCoordinator_1' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEP17-------+'  snippet='' />
+<RunConfig name='HEP17_SD_HEP_02_03' snippet='Master/sourcing/HEP17_SD_HEP_02_03.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_5|Executive_7' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP17_SD_HEP_14_15' snippet='Master/sourcing/HEP17_SD_HEP_14_15.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_5|Executive_7' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP17_pedestal' snippet='Master/sourcing/HEP17.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_5|Executive_7|hcalSrcCoordinator_1' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='                       '  snippet='' />
+<RunConfig name='+-------HEP18-------+'  snippet='' />
+<RunConfig name='HEP18_SD_HEP_02_03' snippet='Master/sourcing/HEP18_SD_HEP_02_03.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_6|Executive_7' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP18_SD_HEP_14_15' snippet='Master/sourcing/HEP18_SD_HEP_14_15.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_6|Executive_7' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='HEP18_pedestal' snippet='Master/sourcing/HEP18.xml' maskedapps='Executive_22|Executive_16|Executive_10|Executive_17|Executive_23|Executive_18|Executive_19|Executive_20|Executive_12|Executive_13|Executive_14|hcalSrcCoordinator_3|hcalSrcCoordinator_2|Executive_6|Executive_7|hcalSrcCoordinator_1' maskedFM='HCAL_HBHEa;HCAL_HBHEb;HCAL_HF;HCAL_HO;HCAL_Laser' eventsToTake='1000000000'>
+<RunConfig name='                       '  snippet='' />
+</RunConfigs>
+

@@ -1,0 +1,49 @@
+socket_port = 4685
+
+# If ratelimit_delay is set, it defines the number of microseconds that the
+# system manager will sleep after sending a command to a crate on behalf of a
+# client application.  This can be used to avoid session timeouts due to
+# excessive rates of requests.
+#
+# Note that this will suspend only the individual crate thread, and other
+# crates will remain unaffected, as will any operation that does not access an
+# individual crate.  The default, 0, is no delay.
+ratelimit_delay = 100000
+
+# If true, the system manager will run as a daemon, and send stdout to syslog.
+#daemonize = true
+daemonize = false
+authentication {
+	raw = {""}
+	manage = { "manage1", "manage2" }
+	read = { "" }
+}
+
+crate {
+	host = "192.168.1.41"
+	mch = "NAT"
+	username = ""
+	password = ""
+	authtype = none # NONE MD2 MD5 STRAIGHT_PASSWORD_KEY
+	description = "41"
+}
+
+
+
+# *** Modules ***
+#
+# These modules will be loaded in the order specified here.  When a new card is
+# detected, they will be checked in reverse order to determine which module
+# will service that card.  If no module claims a card, it will be serviced by
+# the system manager with no special functionality.
+
+cardmodule {
+ 	module = "/home/hcalpro/jhakala/sysmgr_uHTR.so"
+# 	module = "/home/hcalpro/HEprototypeTesting/sysmgr_uHTR.so"
+# 	module = "/home/hcalpro/HEprototypeTesting/uHTR.so.old"
+ 	config = {
+ 	}
+        module = "/home/hcalpro/sysmgr_amc13.so"
+        config = {
+        }
+ }

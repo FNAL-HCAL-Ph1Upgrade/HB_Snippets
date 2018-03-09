@@ -1,0 +1,57 @@
+uHTR {
+
+  noZS=true  # seems to do nothing
+  
+  expectNoLUTs=true
+  useLUTs=false
+  CDRautomatic=true
+  GTXReset_automatic=false
+  #AutoReset=true
+  Use1to1LUT=true
+  zsMarkAndPass=true
+
+
+  DisableZS=true
+  ReadDelay=130
+  pipeline=114
+  npresamples=4
+  nsamples=6
+  #npresamples=2
+  #nsamples=4
+
+  if (CRATE==41) {
+     PRESENT=false
+     #if (SLOT in (3) ) {  # HE FE is read out by AMC3
+     #  ExpectedFrontFirmware="HE-4800 01.04.04"
+     #  ExpectedBackFirmware="HE-4800 01.02.00"
+     #  GTXReset_automatic=false
+     #  CDRautomatic=true
+     #  pipeline=60
+     #  PRESENT=true
+     #  ReadDelay=131 ## This is for the new FW/SW
+     #  #AlignOrbitDelay=26  ## this is for the old FW/SW
+     #  
+     #}
+
+     if (SLOT in (1) ) {  # HB FE is read out by AMC1
+       #ExpectedFrontFirmware="HE-4800 01.04.04"
+       ExpectedFrontFirmware="HB-4800 01.05.00"
+       
+       ExpectedBackFirmware="HB-4800 01.03.11"
+       tp_samples=0
+       tp_presamples=0
+       GTXReset_automatic=false
+       CDRautomatic=true
+       pipeline=60
+       PRESENT=true
+       ReadDelay=131 ## This is for the new FW/SW
+       #AlignOrbitDelay=26  ## this is for the old FW/SW
+       
+     }
+     #if (SLOT in (1) ) {
+     #  #AlignOrbitDelay=25
+     #  ReadDelay=126
+     #}
+  }
+}
+

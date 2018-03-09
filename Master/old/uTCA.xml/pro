@@ -1,0 +1,15 @@
+<mastersnippet>
+  <FMSettings NumberOfEvents="300" RunInfoPublish="false" OfficialRunNumbers="false" />
+
+  <CfgScript>
+    include(/ngRBX/ngRBX.cfg:pro)
+    include(/Crate/crate.cfg:pro)
+    include(/uHTR/uHTR.cfg:pro)
+    include(/AMC13/DTC.cfg:pro)
+    HcalWriter {
+      StoragePath="/tmp"
+      FilenameFormat = "FNAL_%06d.root"
+    }
+  </CfgScript>
+
+</mastersnippet>

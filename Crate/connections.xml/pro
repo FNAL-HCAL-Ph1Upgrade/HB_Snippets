@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connections>
+  <!-- old AMC13 s/n 0080
+  <connection id="hcal.crate41.amc13.T1" uri="chtcp-2.0://localhost:10203?target=192.168.1.95:50001" address_table="file:///opt/cactus/etc/amc13/AMC13XG_T1.xml" />
+  <connection id="hcal.crate41.amc13.T2" uri="chtcp-2.0://localhost:10203?target=192.168.1.94:50001" address_table="file:///opt/cactus/etc/amc13/AMC13XG_T2.xml" />
+  -->
+  <!-- new AMC13 s/n 0303 -->
+  <connection id="hcal.crate41.amc13.T1" uri="chtcp-2.0://cmsnghcal01:10203?target=192.168.3.161:50001" address_table="file:///opt/cactus/etc/amc13/AMC13XG_T1.xml" />
+  <connection id="hcal.crate41.amc13.T2" uri="chtcp-2.0://cmsnghcal01:10203?target=192.168.3.160:50001" address_table="file:///opt/cactus/etc/amc13/AMC13XG_T2.xml" />
+  <connection id="hcal.crate41.slot1" uri="chtcp-2.0://cmsnghcal01:10203?target=192.168.41.4:50001" address_table="file:///home/daqowner/dist/ipbus/hcal/uHTR.xml" />
+  <connection id="hcal.crate41.slot2" uri="chtcp-2.0://cmsnghcal01:10203?target=192.168.41.8:50001" address_table="file:///home/daqowner/dist/ipbus/hcal/uHTR.xml" />
+  <connection id="hcal.crate41.slot3" uri="chtcp-2.0://cmsnghcal01:10203?target=192.168.41.12:50001" address_table="file:///home/daqowner/dist/ipbus/hcal/uHTR.xml" />
+  <connection id="hcal.crate41.slot4" uri="chtcp-2.0://cmsnghcal01:10203?target=192.168.41.16:50001" address_table="file:///home/daqowner/dist/ipbus/hcal/uHTR.xml" />
+  <connection id="hcal.crate41.slot5" uri="chtcp-2.0://cmsnghcal01:10203?target=192.168.41.20:50001" address_table="file:///home/daqowner/dist/ipbus/hcal/uHTR.xml" />
+  <connection id="hcal.crate41.slot6" uri="chtcp-2.0://cmsnghcal01:10203?target=192.168.41.24:50001" address_table="file:///home/daqowner/dist/ipbus/hcal/uHTR.xml" />
+  <connection id="hcal.crate41.slot7" uri="chtcp-2.0://cmsnghcal01:10203?target=192.168.41.28:50001" address_table="file:///home/daqowner/dist/ipbus/hcal/uHTR.xml" />
+  <connection id="hcal.crate41.slot8" uri="chtcp-2.0://cmsnghcal01:10203?target=192.168.41.32:50001" address_table="file:///home/daqowner/dist/ipbus/hcal/uHTR.xml" />
+  <connection id="hcal.crate41.slot9" uri="chtcp-2.0://cmsnghcal01:10203?target=192.168.41.36:50001" address_table="file:///home/daqowner/dist/ipbus/hcal/uHTR.xml" />
+  <connection id="hcal.crate41.slot10" uri="chtcp-2.0://cmsnghcal01:10203?target=192.168.41.40:50001" address_table="file:///home/daqowner/dist/ipbus/hcal/uHTR.xml" />
+  <connection id="hcal.crate41.slot11" uri="chtcp-2.0://cmsnghcal01:10203?target=192.168.41.44:50001" address_table="file:///home/daqowner/dist/ipbus/hcal/uHTR.xml" />
+  <connection id="hcal.crate41.slot12" uri="chtcp-2.0://cmsnghcal01:10203?target=192.168.41.48:50001" address_table="file:///home/daqowner/dist/ipbus/hcal/uHTR.xml" />
+  <connection id="hcal.crate41.uMNio.slot9" uri="chtcp-2.0://cmsnghcal01:10203?target=192.168.41.36:50001" address_table="file:///home/daqowner/dist/ipbus/hcal/uMNio.xml" />
+</connections>
+

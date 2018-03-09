@@ -1,0 +1,25 @@
+<mastersnippet>
+  <FMSettings NumberOfEvents="6400" RunInfoPublish="false" OfficialRunNumbers="false" />
+
+  <CfgScript>
+    include(/ngRBX/ngRBX.cfg:pro)
+    include(/Crate/crate.cfg:pro)
+    include(/uHTR/uHTR.cfg:pro)
+    include(/AMC13/DTC.cfg:pro)
+    HcalWriter {
+      StoragePath="/tmp"
+      FilenameFormat = "FNAL_%06d.root"
+    }
+    ngRBXSequencer {
+
+      RBXName[ 0] = "HE1"
+      RBXCount = 1
+      DefaultEventsPerPoint = 100
+      DelayTime = 0
+      AutoStop = true
+      CommandLog = "/tmp/sequencerLogHE.txt"
+      Script = "/home/daqowner/FNALfakeCfgCVS/ngRBX/sequences/PedestalDAC_scan.txt/pro"
+    }
+  </CfgScript>
+
+</mastersnippet>

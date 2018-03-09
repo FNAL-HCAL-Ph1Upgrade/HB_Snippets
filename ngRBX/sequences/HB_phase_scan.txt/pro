@@ -1,0 +1,917 @@
+#ngccm server commands
+#      Script format:
+#    '#' introduces a comment
+#    [tag-for-step] : [events] [(optional extended tag for parsing purposes)]
+#        Sequence of lines for ngCCM server
+#    [tag-for-step] : [events] [(optional extended tag for parsing purposes)]
+#        Sequence of lines for ngCCM server
+#    
+#    Lines for the ngCCM server start with whitespace
+#     In these lines, ${RBX} will be replaced by the RBX name(s)
+#     A line can be of the form:
+#        dbload [item type] [database accessor] [database tag]
+
+#    Lines which start a new step contain a colon and do not start with white space.
+#     if the events is not specified, the default value from the sequencer will be used.
+#     If the extended tag is provided, it must be put within parenthesis.
+## Copied from P5 April 5, 2017
+
+phase_0 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*0
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_1 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*1
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_2 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*2
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*2
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+phase_3 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*3
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*3
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_4 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*4
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*4
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_5 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*5
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*5
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_6 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*6
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*6
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_7 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*7
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*7
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_8 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*8
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*8
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_9 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*9
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*9
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_10 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*10
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*10
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_11 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*11
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*11
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_12 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*12
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*12
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_13 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*13
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*13
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_14 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*14
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*14
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_15 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*15
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*15
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_16 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*16
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*16
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_17 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*17
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*17
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_18 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*18
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*18
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_19 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*19
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*19
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_20 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*20
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*20
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_21 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*21
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*21
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_22 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*22
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*22
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_23 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*23
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*23
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_24 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*24
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*24
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_25 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*25
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*25
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_26 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*26
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*26
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_27 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*27
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*27
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_28 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*28
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*28
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_29 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*29
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*29
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_30 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*30
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*30
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_31 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*31
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*31
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_32 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*32
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*32
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_33 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*33
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*33
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_34 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*34
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*34
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_35 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*35
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*35
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_36 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*36
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*36
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_37 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*37
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*37
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_38 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*38
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*38
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_39 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*39
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*39
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_40 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*40
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*40
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_41 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*41
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*41
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_42 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*42
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*42
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_43 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*43
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*43
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_44 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*44
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*44
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_45 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*45
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*45
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_46 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*46
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*46
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_47 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*47
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*47
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_48 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*48
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*48
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_49 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*49
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*49
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_64 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*64
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*64
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_65 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*65
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*65
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_66 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*66
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*66
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_67 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*67
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*67
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_68 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*68
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*68
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_69 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*69
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*69
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_70 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*70
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*70
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_71 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*71
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*71
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_72 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*72
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*72
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_73 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*73
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*73
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_74 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*74
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*74
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_75 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*75
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*75
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_76 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*76
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*76
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_77 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*77
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*77
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_78 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*78
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*78
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_79 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*79
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*79
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_80 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*80
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*80
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_81 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*81
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*81
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_82 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*82
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*82
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_83 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*83
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*83
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_84 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*84
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*84
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_85 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*85
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*85
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_86 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*86
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*86
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_87 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*87
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*87
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_88 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*88
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*88
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_89 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*89
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*89
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_90 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*90
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*90
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_91 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*91
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*91
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_92 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*92
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*92
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0 
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_93 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*93
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*93
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_94 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*94
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*94
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_95 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*95
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*95
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_96 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*96
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*96
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_97 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*97
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*97
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_98 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*98
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*98
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_99 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*99
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*99
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_100 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*100
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*100
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_101 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*101
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*101
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_102 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*102
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*102
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_103 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*103
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*103
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_104 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*104
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*104
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_105 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*105
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*105
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_106 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*106
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*106
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_107 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*107
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*107
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_108 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*108
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*108
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_109 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*109
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*109
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_110 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*110
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*110
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_111 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*111
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*111
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_112 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*112
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*112
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+phase_113 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*113
+  put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*113
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1
+  put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0
+
+

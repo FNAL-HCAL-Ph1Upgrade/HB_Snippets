@@ -1,0 +1,7 @@
+DTC {
+  if (CRATE==41) {  
+    SlotEnableList="1,2" # HB FE is read out by AMC1 and AMC2
+    #SlotEnableList="3" # HE FE is read out by AMC3
+  }
+}
+

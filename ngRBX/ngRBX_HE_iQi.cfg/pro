@@ -1,0 +1,7 @@
+ngRBX{
+
+  SpecialCommandsInit=" put ${RBX}-${QIESLOT}-QIE[1-48]_ChargeInjectDAC 48*6 ;"
+  SpecialCommandsEnable=" put HE1-${QIESLOT}-[1-4]-i_CntrReg_CImode 4*1 ;"
+  calibCard=false
+
+}

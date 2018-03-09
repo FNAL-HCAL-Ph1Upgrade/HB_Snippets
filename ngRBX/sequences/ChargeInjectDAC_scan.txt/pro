@@ -1,0 +1,34 @@
+#ngccm server commands
+#      Script format:
+#    '#' introduces a comment
+#    [tag-for-step] : [events] [(optional extended tag for parsing purposes)]
+#        Sequence of lines for ngCCM server
+#    [tag-for-step] : [events] [(optional extended tag for parsing purposes)]
+#        Sequence of lines for ngCCM server
+#    
+#    Lines for the ngCCM server start with whitespace
+#     In these lines, ${RBX} will be replaced by the RBX name(s)
+#     A line can be of the form:
+#        dbload [item type] [database accessor] [database tag]
+
+#    Lines which start a new step contain a colon and do not start with white space.
+#     if the events is not specified, the default value from the sequencer will be used.
+#     If the extended tag is provided, it must be put within parenthesis.
+## Copied from P5 April 5, 2017
+
+dac_0 : 5
+  put ${RBX}-1-QIE[1-12]_ChargeInjectDAC 12*0
+dac_1 : 5
+  put ${RBX}-1-QIE[1-12]_ChargeInjectDAC 12*1
+dac_2 : 5
+  put ${RBX}-1-QIE[1-12]_ChargeInjectDAC 12*2
+dac_3 : 5
+  put ${RBX}-1-QIE[1-12]_ChargeInjectDAC 12*3
+dac_4 : 5
+  put ${RBX}-1-QIE[1-12]_ChargeInjectDAC 12*4
+dac_5 : 5
+  put ${RBX}-1-QIE[1-12]_ChargeInjectDAC 12*5
+dac_6 : 5
+  put ${RBX}-1-QIE[1-12]_ChargeInjectDAC 12*6
+dac_7 : 5
+  put ${RBX}-1-QIE[1-12]_ChargeInjectDAC 12*7

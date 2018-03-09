@@ -1,0 +1,1089 @@
+#ngccm server commands
+#      Script format:
+#    '#' introduces a comment
+#    [tag-for-step] : [events] [(optional extended tag for parsing purposes)]
+#        Sequence of lines for ngCCM server
+#    [tag-for-step] : [events] [(optional extended tag for parsing purposes)]
+#        Sequence of lines for ngCCM server
+#    
+#    Lines for the ngCCM server start with whitespace
+#     In these lines, ${RBX} will be replaced by the RBX name(s)
+#     A line can be of the form:
+#        dbload [item type] [database accessor] [database tag]
+
+#    Lines which start a new step contain a colon and do not start with white space.
+#     if the events is not specified, the default value from the sequencer will be used.
+#     If the extended tag is provided, it must be put within parenthesis.
+
+bxdelay_0 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 5 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 5 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_10 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 15 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 15 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_20 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 25 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 25 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_30 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 35 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 35 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_40 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 45 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 45 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_50 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 55 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 55 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_60 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 65 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 65 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_70 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 75 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 75 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_80 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 85 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 85 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_90 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 95 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 95 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_100 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 105 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 105 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_110 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 115 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 115 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_120 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 125 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 125 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_130 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 135 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 135 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_140 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 145 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 145 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_150 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 155 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 155 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_160 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 165 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 165 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_170 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 175 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 175 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_180 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 185 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 185 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_190 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 195 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 195 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_200 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 205 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 205 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_210 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 215 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 215 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_220 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 225 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 225 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_230 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 235 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 235 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_240 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 245 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 245 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_250 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 255 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 255 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_260 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 265 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 265 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_270 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 275 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 275 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_280 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 285 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 285 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_290 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 295 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 295 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_300 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 305 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 305 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_310 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 315 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 315 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_320 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 325 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 325 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_330 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 335 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 335 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_340 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 345 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 345 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_350 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 355 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 355 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_360 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 365 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 365 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_370 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 375 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 375 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_380 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 385 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 385 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_390 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 395 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 395 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_400 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 405 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 405 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_410 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 415 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 415 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_420 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 425 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 425 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_430 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 435 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 435 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_440 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 445 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 445 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_450 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 455 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 455 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_460 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 465 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 465 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_470 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 475 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 475 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_480 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 485 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 485 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_490 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 495 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 495 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_500 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 505 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 505 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_510 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 515 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 515 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_520 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 525 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 525 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_530 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 535 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 535 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_540 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 545 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 545 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_550 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 555 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 555 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_560 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 565 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 565 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_570 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 575 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 575 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_580 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 585 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 585 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_590 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 595 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 595 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_600 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 605 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 605 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_610 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 615 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 615 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_620 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 625 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 625 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_630 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 635 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 635 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_640 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 645 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 645 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_650 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 655 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 655 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_660 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 665 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 665 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_670 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 675 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 675 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_680 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 685 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 685 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_690 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 695 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 695 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_700 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 705 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 705 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_710 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 715 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 715 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_720 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 725 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 725 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_730 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 735 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 735 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_740 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 745 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 745 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_750 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 755 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 755 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_760 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 765 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 765 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_770 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 775 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 775 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_780 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 785 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 785 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_790 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 795 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 795 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_800 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 805 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 805 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_810 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 815 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 815 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_820 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 825 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 825 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_830 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 835 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 835 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_840 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 845 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 845 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_850 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 855 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 855 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_860 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 865 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 865 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_870 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 875 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 875 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_880 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 885 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 885 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_890 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 895 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 895 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_900 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 905 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 905 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_910 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 915 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 915 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_920 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 925 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 925 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_930 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 935 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 935 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_940 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 945 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 945 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_950 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 955 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 955 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_960 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 965 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 965 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_970 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 975 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 975 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_980 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 985 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 985 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_990 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 995 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 995 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1000 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1005 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1005 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1010 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1015 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1015 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1020 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1025 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1025 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1030 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1035 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1035 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1040 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1045 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1045 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1050 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1055 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1055 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1060 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1065 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1065 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1070 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1075 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1075 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1080 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1085 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1085 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1090 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1095 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1095 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1100 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1105 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1105 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1110 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1115 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1115 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1120 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1125 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1125 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1130 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1135 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1135 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1140 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1145 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1145 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1150 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1155 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1155 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1160 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1165 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1165 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1170 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1175 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1175 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1180 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1185 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1185 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1190 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1195 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1195 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1200 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1205 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1205 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1210 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1215 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1215 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1220 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1225 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1225 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1230 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1235 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1235 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1240 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1245 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1245 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1250 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1255 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1255 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1260 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1265 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1265 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1270 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1275 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1275 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1280 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1285 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1285 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1290 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1295 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1295 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1300 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1305 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1305 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1310 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1315 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1315 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1320 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1325 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1325 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1330 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1335 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1335 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1340 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1345 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1345 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1350 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1355 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1355 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1360 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1365 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1365 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1370 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1375 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1375 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1380 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1385 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1385 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1390 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1395 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1395 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1400 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1405 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1405 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1410 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1415 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1415 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1420 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1425 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1425 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1430 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1435 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1435 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1440 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1445 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1445 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1450 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1455 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1455 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1460 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1465 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1465 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1470 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1475 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1475 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1480 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1485 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1485 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1490 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1495 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1495 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1500 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1505 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1505 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1510 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1515 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1515 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1520 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1525 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1525 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1530 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1535 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1535 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1540 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1545 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1545 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1550 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1555 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1555 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1560 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1565 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1565 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1570 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1575 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1575 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1580 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1585 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1585 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1590 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1595 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1595 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1600 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1605 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1605 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1610 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1615 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1615 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1620 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1625 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1625 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1630 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1635 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1635 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1640 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1645 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1645 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1650 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1655 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1655 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1660 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1665 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1665 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1670 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1675 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1675 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1680 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1685 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1685 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1690 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1695 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1695 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1700 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1705 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1705 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1710 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1715 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1715 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1720 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1725 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1725 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1730 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1735 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1735 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1740 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1745 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1745 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1750 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1755 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1755 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1760 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1765 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1765 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1770 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1775 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1775 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1780 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1785 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1785 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1790 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1795 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1795 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1800 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1805 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1805 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1810 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1815 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1815 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1820 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1825 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1825 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1830 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1835 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1835 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1840 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1845 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1845 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1850 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1855 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1855 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1860 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1865 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1865 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1870 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1875 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1875 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1880 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1885 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1885 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1890 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1895 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1895 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1900 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1905 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1905 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1910 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1915 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1915 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1920 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1925 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1925 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1930 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1935 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1935 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1940 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1945 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1945 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1950 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1955 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1955 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1960 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1965 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1965 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1970 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1975 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1975 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1980 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1985 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1985 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_1990 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 1995 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 1995 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2000 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2005 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2005 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2010 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2015 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2015 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2020 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2025 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2025 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2030 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2035 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2035 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2040 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2045 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2045 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2050 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2055 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2055 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2060 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2065 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2065 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2070 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2075 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2075 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2080 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2085 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2085 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2090 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2095 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2095 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2100 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2105 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2105 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2110 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2115 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2115 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2120 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2125 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2125 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2130 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2135 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2135 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2140 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2145 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2145 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2150 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2155 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2155 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2160 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2165 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2165 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2170 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2175 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2175 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2180 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2185 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2185 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2190 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2195 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2195 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2200 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2205 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2205 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2210 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2215 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2215 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2220 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2225 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2225 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2230 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2235 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2235 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2240 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2245 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2245 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2250 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2255 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2255 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2260 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2265 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2265 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2270 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2275 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2275 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2280 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2285 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2285 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2290 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2295 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2295 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2300 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2305 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2305 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2310 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2315 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2315 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2320 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2325 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2325 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2330 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2335 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2335 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2340 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2345 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2345 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2350 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2355 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2355 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2360 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2365 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2365 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2370 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2375 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2375 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2380 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2385 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2385 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2390 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2395 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2395 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2400 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2405 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2405 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2410 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2415 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2415 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2420 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2425 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2425 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2430 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2435 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2435 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2440 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2445 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2445 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2450 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2455 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2455 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2460 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2465 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2465 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2470 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2475 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2475 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2480 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2485 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2485 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2490 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2495 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2495 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2500 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2505 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2505 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2510 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2515 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2515 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2520 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2525 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2525 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2530 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2535 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2535 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2540 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2545 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2545 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2550 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2555 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2555 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2560 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2565 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2565 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2570 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2575 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2575 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2580 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2585 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2585 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2590 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2595 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2595 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2600 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2605 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2605 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2610 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2615 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2615 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2620 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2625 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2625 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2630 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2635 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2635 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2640 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2645 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2645 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2650 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2655 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2655 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2660 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2665 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2665 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2670 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2675 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2675 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2680 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2685 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2685 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2690 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2695 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2695 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2700 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2705 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2705 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2710 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2715 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2715 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2720 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2725 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2725 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2730 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2735 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2735 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2740 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2745 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2745 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2750 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2755 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2755 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2760 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2765 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2765 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2770 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2775 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2775 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2780 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2785 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2785 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2790 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2795 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2795 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2800 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2805 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2805 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2810 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2815 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2815 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2820 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2825 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2825 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2830 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2835 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2835 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2840 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2845 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2845 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2850 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2855 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2855 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2860 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2865 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2865 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2870 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2875 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2875 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2880 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2885 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2885 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2890 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2895 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2895 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2900 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2905 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2905 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2910 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2915 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2915 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2920 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2925 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2925 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2930 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2935 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2935 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2940 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2945 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2945 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2950 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2955 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2955 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2960 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2965 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2965 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2970 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2975 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2975 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2980 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2985 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2985 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_2990 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 2995 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2995 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3000 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3005 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3005 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3010 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3015 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3015 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3020 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3025 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3025 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3030 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3035 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3035 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3040 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3045 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3045 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3050 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3055 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3055 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3060 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3065 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3065 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3070 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3075 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3075 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3080 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3085 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3085 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3090 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3095 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3095 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3100 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3105 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3105 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3110 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3115 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3115 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3120 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3125 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3125 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3130 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3135 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3135 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3140 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3145 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3145 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3150 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3155 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3155 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3160 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3165 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3165 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3170 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3175 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3175 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3180 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3185 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3185 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3190 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3195 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3195 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3200 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3205 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3205 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3210 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3215 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3215 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3220 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3225 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3225 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3230 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3235 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3235 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3240 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3245 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3245 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3250 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3255 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3255 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3260 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3265 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3265 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3270 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3275 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3275 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3280 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3285 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3285 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3290 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3295 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3295 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3300 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3305 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3305 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3310 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3315 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3315 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3320 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3325 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3325 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3330 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3335 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3335 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3340 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3345 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3345 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3350 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3355 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3355 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3360 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3365 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3365 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3370 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3375 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3375 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3380 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3385 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3385 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3390 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3395 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3395 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3400 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3405 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3405 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3410 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3415 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3415 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3420 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3425 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3425 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3430 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3435 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3435 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3440 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3445 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3445 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3450 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3455 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3455 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3460 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3465 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3465 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3470 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3475 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3475 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3480 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3485 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3485 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3490 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3495 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3495 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3500 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3505 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3505 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3510 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3515 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3515 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3520 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3525 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3525 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3530 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3535 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3535 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3540 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3545 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3545 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3550 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3555 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3555 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+bxdelay_3560 : 5
+  put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 3565 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 3565 ; put ${RBX}-pulser-ledB-width_f 30.0
+  wait
+

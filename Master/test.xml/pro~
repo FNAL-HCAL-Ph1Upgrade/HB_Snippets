@@ -1,0 +1,53 @@
+<mastersnippet>
+  <FMSettings NumberOfEvents="300" RunInfoPublish="false" OfficialRunNumbers="false" />
+
+  <CfgScript>
+  # Important stuff goes here
+    ngRBX{
+      ngCCMServerURL="ws://localhost:4352/ngccm_jrpc"
+      CommandLog="command.log"
+    
+      # HE0 July/August (Oct. 10: change 24 --> 48)
+      # SpecialCommandsInitFirst=" put ${RBX}-${QIESLOT}-QIE[1-48]_DiscOn 48*1 ; put ${RBX}-${QIESLOT}-QIE[1-48]_FixRange 48*0 ; put ${RBX}-${QIESLOT}-QIE[1-48]_RangeSet 48*0 ; put ${RBX}-${QIESLOT}-QIE[1-48]_CkOutEn 48*1 "
+    
+      # Oct 3-10
+      SpecialCommandsInitFirst="put ${RBX}-bkp_reset 0 ;wait ;put ${RBX}-bkp_reset 1 ;wait ;put ${RBX}-bkp_reset 0 ;wait ;put ${RBX}-${QIESLOT}-QIE[1-48]_Lvds 48*1;put ${RBX}-${QIESLOT}-QIE[1-48]_Trim 48*2  ;put ${RBX}-${QIESLOT}-QIE[1-48]_TimingIref 48*0  ;put ${RBX}-${QIESLOT}-QIE[1-48]_ChargeInjectDAC 48*0  ;put ${RBX}-${QIESLOT}-QIE[1-48]_FixRange 48*0  ;put ${RBX}-${QIESLOT}-QIE[1-48]_RangeSet 48*0  ;put ${RBX}-${QIESLOT}-QIE[1-48]_TGain 48*0  ;put ${RBX}-${QIESLOT}-QIE[1-48]_Idcset 48*5  ;put ${RBX}-${QIESLOT}-QIE[1-48]_CkOutEn 48*1  ;wait ;put ${RBX}-${QIESLOT}-dac1-daccontrol_RefSelect 0 ;put ${RBX}-${QIESLOT}-dac1-daccontrol_ChannelMonitorEnable 1 ;put ${RBX}-${QIESLOT}-dac1-daccontrol_InternalRefEnable 1 ;put ${RBX}-${QIESLOT}-dac2-daccontrol_RefSelect 0 ;put ${RBX}-${QIESLOT}-dac2-daccontrol_ChannelMonitorEnable 1 ;put ${RBX}-${QIESLOT}-dac2-daccontrol_InternalRefEnable 1 ;"
+    
+      DelayTag="null"
+      PedestalTag="null"
+      TDCThresholdTag="null"
+    
+     # BiasTag="null"
+     # CalMode="null"
+     # CkOutEn="null"
+     # DiscOn="null"
+     # FixRange="null"
+     # Hysteresis="null"
+     # LVDS="null"
+     # RinSel="null"
+     # Shunt="null"
+     # TDCgainRef="null"
+     # TDCmode="null"
+    
+    
+      rbxName[ 0]="HE1"
+    
+      #if (SITE in (1,2,3,4)) {
+      #    active=true
+      #}
+      calibCard=false
+      rbxType=1 #rt_QIE11
+    
+      # Number of seconds to wait for successful conclusion of RBX configuration
+      # before declaring it failed
+      # NOTE: the value entered here can be used as an override value to _increase_
+      #       the timeout value used from that calculated internally to the application
+      #       as necessary for the number of RBXes listed above, but it cannot _decrease_
+      #       the value used below what was calculated.
+       		  
+      dimTimeoutSeconds = 480
+      FailOnErrors = false
+    }
+  </CfgScript>
+
+</mastersnippet>

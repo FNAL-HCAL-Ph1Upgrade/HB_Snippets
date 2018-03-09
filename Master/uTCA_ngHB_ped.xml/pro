@@ -1,0 +1,8 @@
+<mastersnippet>
+  <CommonMasterSnippet file="Master/common.xml"/>
+  <CfgScript>
+    include(/ngRBX/ngRBX_HB_ped.cfg:pro)
+    include(/uHTR/uHTR_HB4800.cfg:pro)
+    include(/AMC13/DTC_HB.cfg:pro)
+  </CfgScript>
+</mastersnippet>

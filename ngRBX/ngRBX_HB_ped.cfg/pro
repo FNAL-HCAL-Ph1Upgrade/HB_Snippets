@@ -1,0 +1,26 @@
+ngRBX{
+  # Copied to FNAL from 904 on October 26, 2016
+
+  #SpecialCommandsInitFirst="put HB1-1-QIE[1-64]_CkOutEn 64*1 ;put HB1-1-dac1-daccontrol_RefSelect 0 ;put HB1-1-dac1-daccontrol_ChannelMonitorEnable 1 ;put HB1-1-dac1-daccontrol_InternalRefEnable 1 ;put HB1-1-dac2-daccontrol_RefSelect 0 ;put HB1-1-dac2-daccontrol_ChannelMonitorEnable 1 ;put HB1-1-dac2-daccontrol_InternalRefEnable 1 ;put HB1-1-biasvoltage[1-64]_f 64*66.5 ; put HB1-1-QIE[1-64]_PedestalDAC 64*38 ; put ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC 64*6 ;"
+
+  SpecialCommandsInitFirst="put HB1-${QIESLOT}-QIE[1-64]_CkOutEn 256*1 ; put HB1-${QIESLOT}-QIE[1-64]_PedestalDAC 256*38 ; put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*0 ; put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*0 ; put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*0 ;  put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0 ; put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1 ; put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0 ; put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0 ; put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1 ; put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0 ; "
+
+  # Disable charge injection 
+  SpecialCommandsEnable=" put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_CImode 32*0 ;put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_CImode 32*0 ;"
+
+  SpecialCommandsDisable=" put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_CImode 32*0 ;put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_CImode 32*0 ; put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*0 ; put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*0 ; put ${RBX}-${QIESLOT}-Qie[1-64]_ck_ph 64*0 ; put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0 ; put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*1 ; put ${RBX}-${QIESLOT}-[1-4]-iTop_CntrReg_bit31 4*0 ; put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0 ; put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*1 ; put ${RBX}-${QIESLOT}-[1-4]-iBot_CntrReg_bit31 4*0 ; " 
+
+  #PedestalOverride="xmlfolder://home/daqowner/magicxmls/default/he"
+  #DelayOverride="xmlfolder://home/daqowner/magicxmls/default/he"
+  #TDCThresholdOverride="xmlfolder://home/daqowner/magicxmls/default/he"
+
+  rbxName[ 0]="HB1"
+  active=false
+  if (RBX=="HB1")  {
+    if (SITE in (1,2,3,4)) {
+        active=true
+    }
+  }
+  calibCard=false
+
+}

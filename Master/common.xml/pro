@@ -1,0 +1,29 @@
+
+<mastersnippet>
+<FMSettings RunInfoPublish="true" OfficialRunNumbers="true" />
+  <CfgScript>
+    include(/Crate/crate.cfg:pro)
+    include(/AMC13/DTC_common.cfg:pro)
+    include(/ngRBX/ngRBX_common.cfg:pro)
+
+    # use 5 events as the default trigger stride and default events per point for quick scan runs
+    # this must match up with the EventBuilder application property in RS manager
+    TriggerAdapter {
+      TTCciTriggerStride=5
+      TriggerCode=5
+      LPMMode=false
+      UseSuspendForCyclingTTCci=true
+    }
+    ngRBXSequencer {
+        DefaultEventsPerPoint = 5
+        DelayTime = 0
+        AutoStop = true
+        CommandLog = "/tmp/sequencerLog.txt"
+    }
+
+    HcalWriter {
+      StoragePath="/tmp"
+      FilenameFormat = "FNAL_%06d.root"
+    }
+  </CfgScript>
+</mastersnippet>

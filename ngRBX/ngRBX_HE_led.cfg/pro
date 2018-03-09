@@ -1,0 +1,6 @@
+ngRBX{
+
+  SpecialCommandsInit="put ${RBX}-pulser-ledA-enable 1 ; put ${RBX}-pulser-ledA-amplitude_f 1.00 ; put ${RBX}-pulser-ledA-delay_f 0.0 ; put ${RBX}-pulser-ledA-bxdelay 332 ; put ${RBX}-pulser-ledA-width_f 30.0 ; put ${RBX}-pulser-ledB-enable 1 ; put ${RBX}-pulser-ledB-amplitude_f 1.00 ; put ${RBX}-pulser-ledB-delay_f 0.0 ; put ${RBX}-pulser-ledB-bxdelay 2547 ; put ${RBX}-pulser-ledB-width_f 30.0 ;"
+  calibCard=false
+
+}

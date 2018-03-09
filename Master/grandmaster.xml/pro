@@ -1,0 +1,27 @@
+<RunSequenceName>HCAL USC55</RunSequenceName>
+<RunConfigs> 
+  <RunConfig name='--- ngHB (up to date)---' snippet='' maskedapps='' />
+  <RunConfig name='ngHB_uTCA_ped' snippet='Master/uTCA_ngHB_ped.xml' eventsToTake='1000' maskedapps='hcal::uHTRSource_0|hcal::ngRBXSequencer_0' />
+  <RunConfig name='ngHB_uTCA_ped_scan' snippet='Master/uTCA_ngHB_pedestalScan.xml' eventsToTake='6400' maskedapps='hcal::uHTRSource_0' />
+  <RunConfig name='ngHB_uTCA_iQi' snippet='Master/uTCA_ngHB_iQi.xml' eventsToTake='1000' maskedapps='hcal::uHTRSource_0|hcal::ngRBXSequencer_0' />
+  <RunConfig name='ngHB_uTCA_iQiScan' snippet='Master/uTCA_ngHB_iQiScan.xml' eventsToTake='800' maskedapps='hcal::uHTRSource_0' />
+  <RunConfig name='ngHB_uTCA_iQi_GselScan' snippet='Master/uTCA_ngHB_iQi_GselScan.xml' eventsToTake='1300' maskedapps='hcal::uHTRSource_0' />
+  <RunConfig name='ngHB_uTCA_iQi_phaseScan' snippet='Master/uTCA_ngHB_iQi_phaseScan.xml' eventsToTake='11400' maskedapps='hcal::uHTRSource_0' />
+  <RunConfig name='--- ngHE (more up to date)---' snippet='' maskedapps='' />
+  <RunConfig name='ngHE_uTCA_ped' snippet='Master/uTCA_ngHE_ped.xml' maskedapps='hcal::uHTRSource_0|hcal::ngRBXSequencer_0' />
+  <RunConfig name='ngHE_uTCA_led' snippet='Master/uTCA_ngHE_led.xml' maskedapps='hcal::uHTRSource_0|hcal::ngRBXSequencer_0' />
+  <RunConfig name='ngHE_uTCA_iQi' snippet='Master/uTCA_ngHE_iQi.xml' maskedapps='hcal::uHTRSource_0|hcal::ngRBXSequencer_0' />
+  <RunConfig name='ngHE_uTCA_ledBXscan' snippet='Master/uTCA_ngHE_ledBXscan.xml' maskedapps='hcal::uHTRSource_0' />
+  <RunConfig name='--- ngHB (less up to date) ---' snippet='' maskedapps='' />
+  <RunConfig name='ngHB_uTCA_ledBXscan_CUonly' snippet='Master/uTCA_ngHB_ledBXscan.xml' maskedapps='hcal::uHTRSource_0' />
+  <RunConfig name='ngHB_uTCA_led' snippet='Master/uTCA_ngHB_led.xml' maskedapps='hcal::uHTRSource_0|hcal::ngRBXSequencer_0' />
+  <RunConfig name='ngHB_uTCA_led_GselScan' snippet='Master/uTCA_ngHB_led_GselScan.xml' maskedapps='hcal::uHTRSource_0' />
+  <RunConfig name='ngHB_uTCA_led_phase_scan' snippet='Master/uTCA_ngHB_led_phaseScan.xml' maskedapps='hcal::uHTRSource_0' />
+  <RunConfig name='---MIGHT NOT WORK---' snippet='' maskedapps='' />
+  <RunConfig name='test' snippet='Master/test.xml' maskedapps='' />
+  <RunConfig name='test2' snippet='Master/uTCA_ngHB_ped.xml' maskedapps='hcal::uHTRSource_0|hcal::ngRBXSequencer_0' eventsToTake='1337' />
+  <RunConfig name='ngHE_uTCA_test' snippet='Master/uTCA_ngHE_test.xml' maskedapps='hcal::uHTRSource_0|hcal::ngRBXSequencer_0' />
+  <RunConfig name='ngHE_uTCA_pedestalScan' snippet='Master/pedestalScan_test.xml' maskedapps='hcal::uHTRSource_0' />
+  <RunConfig name='ngHE_uTCA_pedestalJumps' snippet='Master/pedestalJumps.xml' maskedapps='hcal::uHTRSource_0' />
+  <RunConfig name='ngHE_uTCA_iqiScan' snippet='Master/chargeInjectionScan.xml' maskedapps='hcal::uHTRSource_0' />
+</RunConfigs>
