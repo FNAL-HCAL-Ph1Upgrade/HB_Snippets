@@ -13,5 +13,4 @@ ngRBX{
   #       the value used below what was calculated.
   dimTimeoutSeconds = 480
   FailOnErrors = false
-
 }
