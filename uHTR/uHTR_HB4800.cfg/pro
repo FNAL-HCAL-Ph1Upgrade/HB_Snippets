@@ -10,7 +10,6 @@ uHTR {
   Use1to1LUT=true
   zsMarkAndPass=true
 
-
   DisableZS=true
   ReadDelay=187
   #pipeline=93
