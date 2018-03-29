@@ -1,9 +1,18 @@
-DTC {
+#DTC {
+#
+#  if (CRATE==41) {  
+#    #SlotEnableList="1,2"
+#    #SlotEnableList="1" # HB FE is read out by AMC3
+#    SlotEnableList="3" # HE FE is read out by AMC3
+#  }
+#
+#}
 
-  if (CRATE==41) {  
-    #SlotEnableList="1,2"
-    #SlotEnableList="1" # HB FE is read out by AMC3
-    SlotEnableList="3" # HE FE is read out by AMC3
+### New for FNAL as of hcos 14_6_1, JCH 3/21/18
+uTCA {
+  # CARD that are not present in the following list will be ignored by uHTRManager and DTCManager
+
+  if (CRATE == 41) {  
+      if (SLOT == 3) { CARD = "uHTR" } 
   }
-
 }

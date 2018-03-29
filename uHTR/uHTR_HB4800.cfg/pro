@@ -24,14 +24,12 @@ uHTR {
   CDRonEnable=false
 
   if (CRATE==41) {
-     PRESENT=false
      if (SLOT in (1,2) ) {  # HB FE is read out by AMC1
        ExpectedFrontFirmware="HB-4800 01.05.00"
        ExpectedBackFirmware="HB-4800 01.03.11"
        GTXReset_automatic=false
        CDRautomatic=true
        pipeline=93
-       PRESENT=true
        ReadDelay=192 ## This is for the new FW/SW
        #AlignOrbitDelay=26  ## this is for the old FW/SW
        
@@ -47,7 +45,6 @@ uHTR {
      #  GTXReset_automatic=false
      #  CDRautomatic=true
      #  pipeline=60
-    # #  PRESENT=true
      #  ReadDelay=131 ## This is for the new FW/SW
      #  #AlignOrbitDelay=26  ## this is for the old FW/SW
      #  
