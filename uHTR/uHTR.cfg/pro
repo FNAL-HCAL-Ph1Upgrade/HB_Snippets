@@ -20,14 +20,12 @@ uHTR {
   #nsamples=4
 
   if (CRATE==41) {
-     PRESENT=false
      #if (SLOT in (3) ) {  # HE FE is read out by AMC3
      #  ExpectedFrontFirmware="HE-4800 01.04.04"
      #  ExpectedBackFirmware="HE-4800 01.02.00"
      #  GTXReset_automatic=false
      #  CDRautomatic=true
      #  pipeline=60
-     #  PRESENT=true
      #  ReadDelay=131 ## This is for the new FW/SW
      #  #AlignOrbitDelay=26  ## this is for the old FW/SW
      #  
@@ -43,7 +41,6 @@ uHTR {
        GTXReset_automatic=false
        CDRautomatic=true
        pipeline=60
-       PRESENT=true
        ReadDelay=131 ## This is for the new FW/SW
        #AlignOrbitDelay=26  ## this is for the old FW/SW
        
