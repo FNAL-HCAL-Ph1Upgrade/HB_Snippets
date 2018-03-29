@@ -14,7 +14,8 @@ ngRBX{
   rbxName[ 0]="HB1"
   active=false
   if (RBX=="HB1")  {
-    if (SITE in (1,2,3,4)) {
+    #if (SITE in (1,2,3,4)) {
+    if (SITE in (2)) {
         active=true
     }
   }
