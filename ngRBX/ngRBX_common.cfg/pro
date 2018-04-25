@@ -1,6 +1,6 @@
 ngRBX{
 
-  ngCCMServerURL="ws://cmshcal4:64011/ngccm_jrpc"
+  ngCCMServerURL="ws://cmsnghcal01:64011/ngccm_jrpc"
   CommandLog="command.log"
 
   rbxType=1 #rt_QIE11

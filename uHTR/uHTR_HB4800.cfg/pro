@@ -23,10 +23,13 @@ uHTR {
   #nsamples=4
   CDRonEnable=false
 
+  # Test for drop first sample
+  #DropFirstSampleHack=true
+
   if (CRATE==41) {
      if (SLOT in (1,2) ) {  # HB FE is read out by AMC1
-       ExpectedFrontFirmware="HB-4800 01.05.00"
-       ExpectedBackFirmware="HB-4800 01.03.11"
+       ExpectedFrontFirmware="HB-4800 01.10.41"
+       ExpectedBackFirmware="HB-4800 01.06.10"
        GTXReset_automatic=false
        CDRautomatic=true
        pipeline=93

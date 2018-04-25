@@ -20,11 +20,13 @@ DTC {
   TriggerListInterchangeName="DTC_self"
 
   localTtcSignal=true
-  internalPeriodicTriggerEnable=true
+  #internalPeriodicTriggerEnable=true
   internalPeriodicTriggerMode=0
 }
 
 TriggerAdapter {
-   Mode="DTC"
+   #Mode="DTC"
+   ### JCH 4/25/18: below is to test the version of the loopback mode TA from Seth
+   Mode="DTC(LocalTrigger)"
    ExternalListName="DTC_self"
 }
