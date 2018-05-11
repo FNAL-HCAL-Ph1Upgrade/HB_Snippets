@@ -1,0 +1,18 @@
+<mastersnippet>
+  <CommonMasterSnippet file="Master/common.xml"/>
+  <CfgScript>
+    include(/ngRBX/ngRBX_HB_master.cfg:pro)
+    include(/uHTR/uHTR_HB4800.cfg:pro)
+    include(/AMC13/DTC_HB.cfg:pro)
+    ngRBXSequencer {
+
+      RBXName[ 0] = "HB1"
+      RBXCount = 1
+      DefaultEventsPerPoint = 100
+      DelayTime = 0
+      AutoStop = true
+      CommandLog = "/tmp/sequencerLogHB.txt"
+      Script = "/home/daqowner/FNALfakeCfgCVS/ngRBX/sequences/HB_master_scan_full.txt/pro"
+    }
+  </CfgScript>
+</mastersnippet>

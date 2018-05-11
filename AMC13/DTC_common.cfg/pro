@@ -20,8 +20,11 @@ DTC {
   TriggerListInterchangeName="DTC_self"
 
   localTtcSignal=true
+  ### JCH 5/9/18: this was to test Seth's latest updates, but it didn't work -- we got stalls in the middle of runs
   #internalPeriodicTriggerEnable=true
-  internalPeriodicTriggerMode=0
+  #internalPeriodicTriggerMode=0
+  #internalPeriodicTriggerBurst=5 ### JCH 5/9/18: this must match the ttcciTriggerStride and triggerCredits defined in snippets and in the EventBuilder application in the RS config
+  #internalPeriodicTriggerRate=100 ### trigger rate in Hz
 }
 
 TriggerAdapter {

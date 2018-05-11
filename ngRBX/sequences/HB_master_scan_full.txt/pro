@@ -1,0 +1,439 @@
+#ngccm server commands
+#      Script format:
+#    '#' introduces a comment
+#    [tag-for-step] : [events] [(optional extended tag for parsing purposes)]
+#        Sequence of lines for ngCCM server
+#    [tag-for-step] : [events] [(optional extended tag for parsing purposes)]
+#        Sequence of lines for ngCCM server
+#    
+#    Lines for the ngCCM server start with whitespace
+#     In these lines, ${RBX} will be replaced by the RBX name(s)
+#     A line can be of the form:
+#        dbload [item type] [database accessor] [database tag]
+
+#    Lines which start a new step contain a colon and do not start with white space.
+#     if the events is not specified, the default value from the sequencer will be used.
+#     If the extended tag is provided, it must be put within parenthesis.
+## Copied from P5 April 5, 2017
+
+# Pedestal run
+dac_0 : 1000
+  wait
+
+# CapID pedestal scan
+dac_1 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+dac_2 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*1
+dac_3 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*2
+dac_4 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*3
+dac_5 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*4
+dac_6 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*5
+dac_7 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*6
+dac_8 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*7
+dac_9 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*8
+dac_10 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*9
+dac_11 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*10
+dac_12 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*11
+dac_13 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*12
+dac_14 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*13
+dac_15 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*14
+dac_16 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*15
+
+# Pedestal scan
+dac_17 : 100  
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*0
+dac_18 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*1
+dac_19 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*2
+dac_20 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*3
+dac_21 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*4
+dac_22 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*5
+dac_23 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*6
+dac_24 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*7
+dac_25 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*8
+dac_26 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*9
+dac_27 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*10
+dac_28 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*11
+dac_29 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*12
+dac_30 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*13
+dac_31 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*14
+dac_32 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*15
+dac_33 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*16
+dac_34 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*17
+dac_35 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*18
+dac_36 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*19
+dac_37 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*20
+dac_38 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*21
+dac_39 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*22
+dac_40 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*23
+dac_41 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*24
+dac_42 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*25
+dac_43 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*26
+dac_44 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*27
+dac_45 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*28
+dac_46 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*29
+dac_47 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*30
+dac_48 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*31
+dac_49 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*32
+dac_50 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*33
+dac_51 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*34
+dac_52 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*35
+dac_53 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*36
+dac_54 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*37
+dac_55 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*38
+dac_56 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*39
+dac_57 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*40
+dac_58 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*41
+dac_59 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*42
+dac_60 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*43
+dac_61 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*44
+dac_62 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*45
+dac_63 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*46
+dac_64 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*47
+dac_65 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*48
+dac_66 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*49
+dac_67 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*50
+dac_68 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*51
+dac_69 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*52
+dac_70 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*53
+dac_71 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*54
+dac_72 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*55
+dac_73 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*56
+dac_74 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*57
+dac_75 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*58
+dac_76 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*59
+dac_77 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*60
+dac_78 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*61
+dac_79 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*62
+dac_80 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*63
+
+
+# iQi scan
+dac_81 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*38
+  put ${RBX}-${QIESLOT}-[1-4]-i[Top,Bot]_CntrReg_CImode 8*1
+  put ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC 64*0
+dac_82 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC 64*1
+dac_83 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC 64*2
+dac_84 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC 64*3
+dac_85 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC 64*4
+dac_86 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC 64*5
+dac_87 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC 64*6
+dac_88 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC 64*7
+
+# iQi Gsel scan
+dac_89 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC 64*6
+  put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*0
+dac_90 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*1
+dac_91 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*2
+dac_92 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*4
+dac_93 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*8
+dac_94 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*16
+dac_95 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*18
+dac_96 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*20
+dac_97 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*24
+dac_98 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*26
+dac_99 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*28
+dac_100 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*30
+dac_101 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*31
+ 
+# iQi phase scan
+dac_102 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*0
+dac_103 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*1
+dac_104 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*2
+dac_105 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*3
+dac_106 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*4
+dac_107 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*5
+dac_108 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*6
+dac_109 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*7
+dac_110 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*8
+dac_111 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*9
+dac_112 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*10
+dac_113 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*11
+dac_114 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*12
+dac_115 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*13
+dac_116 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*14
+dac_117 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*15
+dac_118 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*16
+dac_119 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*17
+dac_120 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*18
+dac_121 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*19
+dac_122 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*20
+dac_123 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*21
+dac_124 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*22
+dac_125 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*23
+dac_126 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*24
+dac_127 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*25
+dac_128 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*26
+dac_129 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*27
+dac_130 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*28
+dac_131 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*29
+dac_132 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*30
+dac_133 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*31
+dac_134 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*32
+dac_135 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*33
+dac_136 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*34
+dac_137 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*35
+dac_138 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*36
+dac_139 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*37
+dac_140 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*38
+dac_141 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*39
+dac_142 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*40
+dac_143 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*41
+dac_144 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*42
+dac_145 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*43
+dac_146 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*44
+dac_147 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*45
+dac_148 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*46
+dac_149 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*47
+dac_150 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*48
+dac_151 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*49
+dac_152 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*64
+dac_153 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*65
+dac_154 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*66
+dac_155 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*67
+dac_156 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*68
+dac_157 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*69
+dac_158 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*70
+dac_159 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*71
+dac_160 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*72
+dac_161 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*73
+dac_162 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*74
+dac_163 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*75
+dac_164 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*76
+dac_165 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*77
+dac_166 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*78
+dac_167 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*79
+dac_168 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*80
+dac_169 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*81
+dac_170 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*82
+dac_171 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*83
+dac_172 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*84
+dac_173 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*85
+dac_174 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*86
+dac_175 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*87
+dac_176 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*88
+dac_177 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*89
+dac_178 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*90
+dac_179 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*91
+dac_180 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*92
+dac_181 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*93
+dac_182 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*94
+dac_183 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*95
+dac_184 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*96
+dac_185 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*97
+dac_186 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*98
+dac_187 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*99
+dac_188 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*100
+dac_189 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*101
+dac_190 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*102
+dac_191 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*103
+dac_192 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*104
+dac_193 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*105
+dac_194 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*106
+dac_195 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*107
+dac_196 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*108
+dac_197 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*109
+dac_198 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*110
+dac_199 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*111
+dac_200 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*112
+dac_201 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*113
