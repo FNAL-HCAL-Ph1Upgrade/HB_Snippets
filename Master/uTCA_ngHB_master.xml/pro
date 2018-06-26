@@ -12,7 +12,12 @@
       DelayTime = 0
       AutoStop = true
       CommandLog = "/tmp/sequencerLogHB.txt"
-      Script = "/home/daqowner/FNALfakeCfgCVS/ngRBX/sequences/HB_master_scan_full.txt/pro"
+      Script = "/home/daqowner/FNALfakeCfgCVS/ngRBX/sequences/HB_master_scan.txt/pro"
     }
+    ngRBX {
+       rbxType = 2
+       linkTestMode = 1
+    }
+
   </CfgScript>
 </mastersnippet>

@@ -22,7 +22,7 @@
     }
 
     HcalWriter {
-      StoragePath="/tmp"
+      StoragePath="/home/hcalpro/DATA/"
       FilenameFormat = "FNAL_%06d.root"
     }
   </CfgScript>

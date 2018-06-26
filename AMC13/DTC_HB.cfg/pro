@@ -11,5 +11,6 @@ uTCA {
 
   if (CRATE == 41) {  
       if (SLOT in (1,2)) { CARD = "uHTR" } 
+      #if (SLOT in (1)) { CARD = "uHTR" } 
   }
 }

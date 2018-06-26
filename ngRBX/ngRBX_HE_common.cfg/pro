@@ -10,11 +10,11 @@ ngRBX{
 
   # clean up commands to ground-state the HE ngRBX
   # i.e. turn off iQi and LED, reset other stuff
-  SpecialCommandsInitFirst="put HE1-4-muxchannel 1 ;wait ;put HE1-4-dac1-monchan 0x3f ;put HE1-4-dac2-monchan 0x3f ; wait ;put HE1-4-QIE[1-48]_CkOutEn 48*1 ;put HE1-4-dac1-daccontrol_RefSelect 0 ;put HE1-4-dac1-daccontrol_ChannelMonitorEnable 1 ;put HE1-4-dac1-daccontrol_InternalRefEnable 1 ;put HE1-4-dac2-daccontrol_RefSelect 0 ;put HE1-4-dac2-daccontrol_ChannelMonitorEnable 1 ;put HE1-4-dac2-daccontrol_InternalRefEnable 1 ;put HE1-4-biasvoltage[1-48]_f 48*66.5 ; put HE1-4-QIE[1-48]_PedestalDAC 48*38 ; put HE1-${QIESLOT}-[1-4]-i_CntrReg_CImode 4*0 ; put HE1-pulser-ledA-enable 0 ; put HE1-pulser-ledB-enable 0 ; put HE1-pulser-ledA-amplitude_f 1.00 ; put HE1-pulser-ledB-amplitude_f 1.00 ;"
+#  SpecialCommandsInitFirst="put HE1-4-muxchannel 1 ;wait ;put HE1-4-dac1-monchan 0x3f ;put HE1-4-dac2-monchan 0x3f ; wait ;put HE1-4-QIE[1-48]_CkOutEn 48*1 ;put HE1-4-dac1-daccontrol_RefSelect 0 ;put HE1-4-dac1-daccontrol_ChannelMonitorEnable 1 ;put HE1-4-dac1-daccontrol_InternalRefEnable 1 ;put HE1-4-dac2-daccontrol_RefSelect 0 ;put HE1-4-dac2-daccontrol_ChannelMonitorEnable 1 ;put HE1-4-dac2-daccontrol_InternalRefEnable 1 ;put HE1-4-biasvoltage[1-48]_f 48*66.5 ; put HE1-4-QIE[1-48]_PedestalDAC 48*38 ; put HE1-${QIESLOT}-[1-4]-i_CntrReg_CImode 4*0 ; put HE1-pulser-ledA-enable 0 ; put HE1-pulser-ledB-enable 0 ; put HE1-pulser-ledA-amplitude_f 1.00 ; put HE1-pulser-ledB-amplitude_f 1.00 ;"
 
   #rbxName[ 0]="HE1"
   rbxName[ 0]="HE0"
-  rbxName[ 1]="HE1"
+#  rbxName[ 1]="HE1"
   active=false
   if (RBX=="HE1")  {
     if (SITE in (4)) {
