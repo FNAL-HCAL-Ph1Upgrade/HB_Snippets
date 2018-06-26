@@ -355,601 +355,1204 @@ phase_0 : 100
   put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*0
   get ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*0
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_1 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*1
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_2 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*2
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_3 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*3
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_4 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*4
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_5 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*5
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_6 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*6
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_7 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*7
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_8 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*8
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_9 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*9
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_10 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*10
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_11 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*11
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_12 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*12
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_13 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*13
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_14 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*14
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_15 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*15
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_16 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*16
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_17 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*17
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_18 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*18
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_19 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*19
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_20 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*20
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_21 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*21
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_22 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*22
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_23 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*23
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_24 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*24
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_25 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*25
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_26 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*26
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_27 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*27
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_28 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*28
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_29 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*29
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_30 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*30
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_31 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*31
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_32 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*32
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_33 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*33
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_34 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*34
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_35 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*35
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_36 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*36
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_37 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*37
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_38 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*38
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_39 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*39
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_40 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*40
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_41 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*41
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_42 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*42
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_43 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*43
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_44 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*44
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_45 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*45
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_46 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*46
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_47 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*47
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_48 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*48
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_49 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*49
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_64 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*64
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_65 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*65
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_66 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*66
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_67 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*67
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_68 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*68
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_69 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*69
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_70 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*70
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_71 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*71
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_72 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*72
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_73 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*73
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_74 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*74
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_75 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*75
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_76 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*76
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_77 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*77
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_78 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*78
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_79 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*79
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_80 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*80
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_81 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*81
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_82 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*82
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_83 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*83
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_84 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*84
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_85 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*85
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_86 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*86
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_87 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*87
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_88 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*88
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_89 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*89
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_90 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*90
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_91 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*91
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_92 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*92
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_93 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*93
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_94 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*94
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_95 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*95
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_96 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*96
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_97 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*97
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_98 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*98
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_99 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*99
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_100 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*100
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_101 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*101
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_102 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*102
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_103 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*103
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_104 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*104
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_105 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*105
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_106 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*106
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_107 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*107
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_108 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*108
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_109 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*109
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_110 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*110
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_111 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*111
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_112 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*112
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
 phase_113 : 100
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*113
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
   put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
   get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
