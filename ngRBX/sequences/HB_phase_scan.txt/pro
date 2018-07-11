@@ -1,618 +1,700 @@
-#ngccm server commands
-#      Script format:
-#    '#' introduces a comment
-#    [tag-for-step] : [events] [(optional extended tag for parsing purposes)]
-#        Sequence of lines for ngCCM server
-#    [tag-for-step] : [events] [(optional extended tag for parsing purposes)]
-#        Sequence of lines for ngCCM server
-#    
-#    Lines for the ngCCM server start with whitespace
-#     In these lines, ${RBX} will be replaced by the RBX name(s)
-#     A line can be of the form:
-#        dbload [item type] [database accessor] [database tag]
-
-#    Lines which start a new step contain a colon and do not start with white space.
-#     if the events is not specified, the default value from the sequencer will be used.
-#     If the extended tag is provided, it must be put within parenthesis.
-## Copied from P5 April 5, 2017
-
-phase_0 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+phase_0 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*0
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_1 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_1 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_2 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_2 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_3 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_4 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*2
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_3 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_5 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_6 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*3
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_4 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_7 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_8 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*4
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_5 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_9 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_10 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*5
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_6 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_11 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_12 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*6
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_7 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_13 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_14 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*7
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_8 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_15 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_16 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*8
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_9 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_17 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_18 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*9
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_10 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_19 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_20 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*10
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_11 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_21 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_22 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*11
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_12 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_23 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_24 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*12
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_13 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_25 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_26 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*13
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_14 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_27 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_28 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*14
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_15 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_29 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_30 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*15
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_16 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_31 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_32 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*16
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_17 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_33 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_34 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*17
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_18 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_35 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_36 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*18
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_19 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_37 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_38 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*19
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_20 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_39 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_40 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*20
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_21 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_41 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_42 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*21
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_22 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_43 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_44 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*22
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_23 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_45 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_46 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*23
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_24 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_47 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_48 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*24
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_25 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_49 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_50 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*25
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_26 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_51 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_52 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*26
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_27 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_53 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_54 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*27
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_28 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_55 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_56 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*28
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_29 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_57 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_58 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*29
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_30 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_59 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_60 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*30
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_31 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_61 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_62 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*31
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_32 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_63 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_64 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*32
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_33 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_65 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_66 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*33
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_34 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_67 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_68 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*34
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_35 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_69 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_70 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*35
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_36 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_71 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_72 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*36
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_37 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_73 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_74 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*37
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_38 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_75 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_76 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*38
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_39 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_77 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_78 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*39
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_40 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_79 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_80 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*40
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_41 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_81 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_82 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*41
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_42 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_83 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_84 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*42
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_43 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_85 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_86 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*43
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_44 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_87 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_88 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*44
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_45 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_89 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_90 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*45
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_46 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_91 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_92 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*46
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_47 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_93 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_94 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*47
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_48 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_95 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_96 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*48
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_49 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_97 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_98 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*49
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_64 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_99 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_100 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*64
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_65 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_101 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_102 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*65
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_66 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_103 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_104 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*66
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_67 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_105 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_106 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*67
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_68 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_107 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_108 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*68
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_69 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_109 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_110 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*69
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_70 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_111 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_112 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*70
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_71 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_113 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_114 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*71
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_72 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_115 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_116 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*72
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_73 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_117 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_118 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*73
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_74 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_119 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_120 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*74
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_75 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_121 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_122 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*75
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_76 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_123 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_124 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*76
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_77 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_125 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_126 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*77
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_78 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_127 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_128 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*78
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_79 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_129 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_130 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*79
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_80 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_131 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_132 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*80
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_81 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_133 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_134 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*81
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_82 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_135 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_136 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*82
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_83 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_137 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_138 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*83
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_84 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_139 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_140 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*84
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_85 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_141 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_142 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*85
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_86 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_143 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_144 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*86
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_87 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_145 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_146 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*87
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_88 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_147 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_148 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*88
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_89 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_149 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_150 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*89
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_90 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_151 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_152 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*90
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_91 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_153 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_154 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*91
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_92 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_155 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_156 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*92
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_93 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_157 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_158 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*93
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_94 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_159 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_160 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*94
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_95 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_161 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_162 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*95
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_96 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_163 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_164 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*96
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_97 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_165 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_166 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*97
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_98 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_167 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_168 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*98
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_99 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_169 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_170 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*99
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_100 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_171 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_172 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*100
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_101 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_173 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_174 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*101
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_102 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_175 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_176 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*102
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_103 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_177 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_178 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*103
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_104 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_179 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_180 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*104
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_105 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_181 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_182 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*105
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_106 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_183 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_184 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*106
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_107 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_185 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_186 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*107
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_108 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_187 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_188 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*108
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_109 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_189 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_190 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*109
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_110 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_191 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_192 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*110
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_111 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_193 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_194 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*111
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_112 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_195 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_196 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*112
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-phase_113 : 100
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_197 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_198 : 50
   put ${RBX}-${QIESLOT}-QIE[1-64]_PhaseDelay 64*113
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
-  put HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
-  get HB1-1-[1-4]-[iTop,iBot]_CntrReg_CImode
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*0
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
+phase_199 : 50
+  put ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode 8*1
+  get ${RBX}-${QIESLOT}-[1-4]-[iTop,iBot]_CntrReg_CImode
