@@ -12,5 +12,5 @@ ngRBX{
   #       as necessary for the number of RBXes listed above, but it cannot _decrease_
   #       the value used below what was calculated.
   dimTimeoutSeconds = 480
-  FailOnErrors = false
+  FailOnErrors = true
 }
