@@ -32,6 +32,8 @@ dac_0 : 1000
 
 # CapID pedestal scan
 dac_1 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*45
+  get ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC
   put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   get ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal
 dac_2 : 100
