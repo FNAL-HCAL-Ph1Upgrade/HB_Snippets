@@ -472,6 +472,9 @@ dac_80 : 100
 
 # iQi scan
 dac_81 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_PedestalDAC 64*38
   put ${RBX}-${QIESLOT}-[1-4]-i[Top,Bot]_CntrReg_CImode 8*1
   put ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC 64*0
@@ -479,67 +482,127 @@ dac_81 : 100
   get ${RBX}-${QIESLOT}-[1-4]-i[Top,Bot]_CntrReg_CImode
   get ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC
 dac_82 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC 64*1
   get ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC
 dac_83 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC 64*2
   get ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC
 dac_84 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC 64*3
   get ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC
 dac_85 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC 64*4
   get ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC
 dac_86 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC 64*5
   get ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC
 dac_87 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC 64*6
   get ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC
 dac_88 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC 64*7
   get ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC
 
 # iQi Gsel scan
 dac_89 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC 64*6
   put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*0
   get ${RBX}-${QIESLOT}-QIE[1-64]_ChargeInjectDAC
   get ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 
 dac_90 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*1
   get ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 
 dac_91 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*2
   get ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 
 dac_92 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*4
   get ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 
 dac_93 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*8
   get ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 
 dac_94 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*16
   get ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 
 dac_95 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*18
   get ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 
 dac_96 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*20
   get ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 
 dac_97 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*24
   get ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 
 dac_98 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*26
   get ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 
 dac_99 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*28
   get ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 
 dac_100 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*30
   get ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 
 dac_101 : 100
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
+  put ${RBX}-${QIESLOT}-QIE[1-64]_CapID[0-3]pedestal 256*0
   put ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 64*31
   get ${RBX}-${QIESLOT}-QIE[1-64]_Gsel 
  
